@@ -9,6 +9,8 @@ metadata:
 spec:
   host: database.apps.ocp4-mng.example.com
   path: "/todo"
+  port:
+    targetPort: 8080
   to:
     kind: Service
     name: frontend
