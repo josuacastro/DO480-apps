@@ -1,0 +1,11 @@
+kind: Kustomization
+#bases:
+#- ./overlays
+resources:
+- ./overlays/route.yaml
+- ./overlays/deployment.yaml
+- ./overlays/deployment-frontend.yaml
+- ./overlays/service.yaml
+- ./overlays/service-frontend.yaml
+
+namePrefix: prod-
